@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 # Web-L1-LandingPage
 
 This is Task 1 of my Oasis Infobyte internship – a static landing page built with HTML and CSS.
@@ -26,10 +28,14 @@ This project demonstrates foundational HTML and CSS layout skills with a focus o
 
 ## Tech Stack
 
-| HTML5  | Structure and semantic markup 
-| CSS3 | Styling, layout, and responsiveness using Flexbox and Grid 
-| Font Awesome | Social media icons 
-| Google Fonts (Inter) | Clean and modern typography 
+| HTML5 | Structure and semantic markup
+| CSS3 | Styling, layout, and responsiveness using Flexbox and Grid
+| Font Awesome | Social media icons
+| Google Fonts (Inter) | Clean and modern typography
 
 ---
 
+## Live Demo
+
+View the live demo here:  
+[https://oibsip-six-eta.vercel.app/](https://oibsip-six-eta.vercel.app/)
