@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Usama Jameel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">&lt;Usama /&gt;</a>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-section">
+      <div class="container">
+        <h1 class="page-title">Contact Me</h1>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              Feel free to reach out for collaborations, freelance projects, or
+              just a friendly chat.
+            </p>
+            <div class="contact-social">
+              <a href="mailto:usamajameel319@gmail.com" class="contact-item"
+                ><i class="fas fa-envelope"></i
+                ><span>usamajameel319@gmail.com</span></a
+              >
+              <a
+                href="https://github.com/usamakhanzada319"
+                target="_blank"
+                class="contact-item"
+                ><i class="fab fa-github"></i
+                ><span>github.com/usamakhanzada319</span></a
+              >
+              <a
+                href="https://www.linkedin.com/in/usama-jamil-b23a36202/"
+                target="_blank"
+                class="contact-item"
+                ><i class="fab fa-linkedin-in"></i
+                ><span>linkedin.com/in/usamajameel</span></a
+              >
+            </div>
+          </div>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label
+              ><input
+                type="text"
+                id="name"
+                placeholder="Usama Jameel"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label
+              ><input
+                type="email"
+                id="email"
+                placeholder="usama@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label
+              ><textarea
+                id="message"
+                rows="5"
+                placeholder="Your message here..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Usama Jameel. Built with
+          <i class="fas fa-heart" style="color: #7cbd1e"></i>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

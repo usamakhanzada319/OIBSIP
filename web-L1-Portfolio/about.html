@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Usama Jameel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">&lt;Usama /&gt;</a>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-section">
+      <div class="container">
+        <h1 class="page-title">About Me</h1>
+        <div class="page-content">
+          <p>
+            Frontend developer with a passion for building fast, accessible, and
+            responsive web applications. I love taking design mockups and
+            turning them into fully functional, interactive user interfaces that
+            perform flawlessly across all devices.
+          </p>
+          <p>
+            Currently diving deep into React, Next.js, and the modern JavaScript
+            ecosystem. I believe in writing code that not only works today but
+            is also maintainable and scalable for tomorrow's challenges.
+          </p>
+          <div class="about-stats page-stats">
+            <div class="stat">
+              <span class="stat-number">1+</span
+              ><span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span
+              ><span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5+</span
+              ><span class="stat-label">Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Usama Jameel. Built with
+          <i class="fas fa-heart" style="color: #7cbd1e"></i>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

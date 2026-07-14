@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Usama Jameel — Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header id="header" class="header">
+      <div class="container header-container">
+        <a href="#home" class="logo">&lt;Usama /&gt;</a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <!-- Dark mode toggle -->
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+
+          <!-- Mobile Menu toggle -->
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+          <p class="hero-badge">Hello, I'm</p>
+          <h1 class="hero-name">Usama Jameel</h1>
+          <p class="hero-role">Frontend Developer</p>
+          <p class="hero-bio">
+            I craft digital experiences that are fast, responsive, and
+            human-centered. From design to deployment, I build clean, scalable
+            code with a focus on performance and accessibility — currently
+            exploring React, Next.js, and the ever-evolving frontend landscape.
+          </p>
+
+          <div class="hero-social">
+            <a
+              href="https://github.com/usamakhanzada319"
+              target="_blank"
+              aria-label="View GitHub Profile"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/usama-jamil-b23a36202/"
+              target="_blank"
+              aria-label="View LinkedIn Profile"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=usamajameel319@gmail.com"
+              aria-label="Send Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <!-- Hero section Button -->
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        <!-- Profile Images -->
+        <div class="hero-image" data-aos="fade-up" data-aos-delay="200">
+          <div class="profile-wrapper">
+            <img
+              src="Images/profile.png"
+              alt="Usama Jameel"
+              class="profile-img"
+            />
+            <div class="profile-ring"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">About me</h2>
+        <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+          <div class="about-text">
+            <p>
+              Frontend developer with a passion for building fast, accessible,
+              and responsive web applications. I love taking design mockups and
+              turning them into fully functional, interactive user interfaces
+              that perform flawlessly across all devices.
+            </p>
+            <p>
+              Currently diving deep into React, Next.js, and the modern
+              JavaScript ecosystem. I believe in writing code that not only
+              works today but is also maintainable and scalable for tomorrow's
+              challenges.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">1+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill section -->
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+        <div class="skills-grid page-skills">
+          <!-- 1. HTML5 -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h3 class="skill-name">HTML5</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+            <span class="skill-percent">90%</span>
+          </div>
+
+          <!-- 2. CSS3 -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h3 class="skill-name">CSS3</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+
+          <!-- 3. JavaScript -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+            <h3 class="skill-name">JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+
+          <!-- 4. React -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <h3 class="skill-name">React</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+
+          <!-- 5. Redux -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-store"></i></div>
+            <h3 class="skill-name">Redux</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 60%"></div>
+            </div>
+            <span class="skill-percent">60%</span>
+          </div>
+
+          <!-- 6. TypeScript -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3 class="skill-name">TypeScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 50%"></div>
+            </div>
+            <span class="skill-percent">50%</span>
+          </div>
+
+          <!-- 7. React Router -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+            <h3 class="skill-name">React Router</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+
+          <!-- 8. Figma -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3 class="skill-name">Figma</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 60%"></div>
+            </div>
+            <span class="skill-percent">60%</span>
+          </div>
+
+          <!-- 9. AOS -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-scroll"></i></div>
+            <h3 class="skill-name">AOS</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+
+          <!-- 10. Tailwind CSS -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-tailwind"></i></div>
+            <h3 class="skill-name">Tailwind CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+            <span class="skill-percent">70%</span>
+          </div>
+
+          <!-- 11. Git & GitHub -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <h3 class="skill-name">Git & GitHub</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+
+          <!-- 12. Responsive Design -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3 class="skill-name">Responsive Design</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project section -->
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+        <div class="projects-grid" data-aos="fade-up" data-aos-delay="100">
+          <!-- 1st Project -->
+
+          <div class="project-card">
+            <!-- project image -->
+            <div class="project-image">
+              <img
+                src="Images/construction.png"
+                alt="Construction Company"
+                loading="lazy"
+              />
+              <!-- vercel Link -->
+              <div class="project-overlay">
+                <a
+                  href="https://construction-company-beta.vercel.app"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <!-- Github Link -->
+
+                <a
+                  href="https://github.com/usamakhanzada319/construction-company"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <!-- project content -->
+
+            <div class="project-content">
+              <h3 class="project-title">Construction Company Website</h3>
+
+              <p class="project-desc">
+                A fully responsive construction company website with modern UI,
+                built with React and Tailwind CSS.
+              </p>
+
+              <div class="project-tech">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>React Router</span>
+                <span>AOS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd project -->
+
+          <div class="project-card">
+            <!-- project image -->
+            <div class="project-image">
+              <img
+                src="Images/homeLand.png"
+                alt="Homeland Real Estate"
+                loading="lazy"
+              />
+              <!-- vercel Link -->
+              <div class="project-overlay">
+                <a
+                  href="https://homeland-bay.vercel.app/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <!-- Github Link -->
+
+                <a
+                  href="https://github.com/usamakhanzada319/HomeLand"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <!-- project content -->
+
+            <div class="project-content">
+              <h3 class="project-title">Homeland Real Estate</h3>
+
+              <p class="project-desc">
+                A real estate platform with property listings, search, and
+                filtering. Built with React and Tailwind.
+              </p>
+
+              <div class="project-tech">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>React Router</span>
+                <span>Swiper</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd project -->
+
+          <div class="project-card">
+            <!-- project image -->
+            <div class="project-image">
+              <img src="Images/jadoo.png" alt="JODOO TRAVEL" loading="lazy" />
+              <!-- vercel Link -->
+              <div class="project-overlay">
+                <a
+                  href="https://jadoo-travel-01.vercel.app/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <!-- Github Link -->
+
+                <a
+                  href="https://github.com/usamakhanzada319/jadoo-travel-01"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <!-- project content -->
+
+            <div class="project-content">
+              <h3 class="project-title">JODOO TRAVEL</h3>
+
+              <p class="project-desc">
+                A travel platform with hotel ,flight,tickets And search. Built
+                with React and Tailwind.
+              </p>
+
+              <div class="project-tech">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>React Router</span>
+              </div>
+            </div>
+          </div>
+
+          <!--4th  Project -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="Images/currency.png"
+                alt="Landing Page"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://currency-project-mlumaebeu-usama-jameels-projects-29c23117.vercel.app/"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a
+                  href="https://github.com/usamakhanzada319/CurrencyProject"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Currency Converter</h3>
+              <p class="project-desc">
+                A professional currency converter with real-time exchange rates
+                using live API. Built with HTML5, CSS3 &amp; JavaScript
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content section -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+
+        <div class="contact-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              Feel free to reach out for collaborations, freelance projects, or
+              just a friendly chat.
+            </p>
+
+            <div class="contact-social">
+              <a href="mailto:usamajameel319@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>usamajameel319@gmail.com</span>
+              </a>
+
+              <a
+                href="https://github.com/usamakhanzada319"
+                target="_blank"
+                class="contact-item"
+              >
+                <i class="fab fa-github"></i>
+                <span>github.com/usamakhanzada319</span>
+              </a>
+
+              <a
+                href="https://linkedin.com/in/usamajameel"
+                target="_blank"
+                class="contact-item"
+              >
+                <i class="fab fa-linkedin-in"></i>
+                <span>linkedin.com/in/usamajameel</span>
+              </a>
+
+              <a
+                href="https://twitter.com/usamajameel"
+                target="_blank"
+                class="contact-item"
+              >
+                <i class="fab fa-twitter"></i>
+                <span>twitter.com/usamajameel</span>
+              </a>
+            </div>
+          </div>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Usama Jameel"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="usama@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Your message here..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Usama Jameel. Built with
+          <i class="fas fa-heart" style="color: #7cbd1e"></i>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

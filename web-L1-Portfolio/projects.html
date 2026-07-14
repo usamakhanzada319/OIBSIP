@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Usama Jameel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">&lt;Usama /&gt;</a>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-section">
+      <div class="container">
+        <h1 class="page-title">My Projects</h1>
+        <div class="projects-grid">
+          <a href="construction.html" class="project-card-link">
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  src="Images/construction.png"
+                  alt="Construction"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Construction Company</h3>
+                <p class="project-desc">React + Tailwind CSS</p>
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>Tailwind CSS</span>
+                  <span>React Router</span>
+                  <span>AOS</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="homeland.html" class="project-card-link">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="Images/homeLand.png" alt="Homeland" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Homeland Real Estate</h3>
+                <p class="project-desc">React + Tailwind + Swiper</p>
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>Tailwind CSS</span>
+                  <span>React Router</span>
+                  <span>AOS</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="jadoo.html" class="project-card-link">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="Images/jadoo.png" alt="Jadoo" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">JADOO TRAVEL</h3>
+                <p class="project-desc">React + Tailwind</p>
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>Tailwind CSS</span>
+                  <span>React Router</span>
+                  <span>AOS</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="currency.html" class="project-card-link">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="Images/currency.png" alt="Currency" loading="lazy" />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Currency Converter</h3>
+                <p class="project-desc">HTML + CSS + JavaScript</p>
+                <div class="project-tech">
+                  <span>HTLM</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Usama Jameel. Built with
+          <i class="fas fa-heart" style="color: #7cbd1e"></i>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
