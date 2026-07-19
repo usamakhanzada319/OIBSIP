@@ -1,22 +1,29 @@
 # OIBSIP — Oasis Infobyte Internship Tasks
 
-This repository contains all the tasks completed during my **Web Development & Designing** internship at **Oasis Infobyte**.
+My internship tasks at **Oasis Infobyte** — Web Development & Designing track.
 
 ---
 
-## Tasks Overview
+## Live Demos
 
-| # | Task | Live Demo | Repository |
-|---|------|-----------|------------|
-| 1 | **Landing Page** | [View Live](https://oibsip-six-eta.vercel.app/) | [web-L1-LandingPage](./web-L1-LandingPage) |
-| 2 | **Personal Portfolio** | [View Live](https://oibsip-v2kn.vercel.app/) | [web-L1-Portfolio](./web-L1-Portfolio) |
-| 3 | **Temperature Converter** | [View Live](https://oibsip-lihg.vercel.app/) | [web-L1-TempConverter](./web-L1-TempConverter) |
+| Task                      | Live Demo                                           |
+| ------------------------- | --------------------------------------------------- |
+| **Landing Page**          | [View Live](https://web-l1-landing-page.vercel.app) |
+| **Personal Portfolio**    | [View Live](https://oibsip-v2kn.vercel.app/)        |
+| **Temperature Converter** | [View Live](https://oibsip-lihg.vercel.app/)        |
 
 ---
 
-## Technologies Used
+## Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript
-- Vercel (Deployment)
+- Vercel
+
+---
+
+## 👤 Author
+
+**Usama Jameel**  
+[GitHub](https://github.com/usamakhanzada319) · [LinkedIn](https://linkedin.com/in/usama-jamil-b23a36202/)
