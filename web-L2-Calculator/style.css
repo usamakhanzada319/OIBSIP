@@ -1,0 +1,319 @@
+/*RESET & VARIABLES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #f0f4f8;
+  --bg-secondary: #ffffff;
+  --bg-calculator: #ffffff;
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-display: #1a202c;
+  --border-color: #e2e8f0;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 25px 70px rgba(0, 0, 0, 0.12);
+  --btn-number-bg: #f7fafc;
+  --btn-number-hover: #edf2f7;
+  --btn-number-active: #e2e8f0;
+  --btn-operator-bg: #ebf4ff;
+  --btn-operator-hover: #dbeafe;
+  --btn-operator-active: #bfdbfe;
+  --btn-equals-bg: #7c3aed;
+  --btn-equals-hover: #6d28d9;
+  --btn-equals-active: #5b21b6;
+  --btn-clear-bg: #fee2e2;
+  --btn-clear-hover: #fecaca;
+  --btn-clear-active: #fca5a5;
+  --btn-text: #1a202c;
+  --btn-text-white: #ffffff;
+  --border-radius: 16px;
+  --transition: 0.25s ease;
+}
+
+/* DARK MODE*/
+html.dark {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-calculator: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-display: #f1f5f9;
+  --border-color: #334155;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 25px 70px rgba(0, 0, 0, 0.5);
+  --btn-number-bg: #334155;
+  --btn-number-hover: #475569;
+  --btn-number-active: #64748b;
+  --btn-operator-bg: #2d3748;
+  --btn-operator-hover: #4a5568;
+  --btn-operator-active: #718096;
+  --btn-clear-bg: #450a0a;
+  --btn-clear-hover: #7f1d1d;
+  --btn-clear-active: #991b1b;
+  --btn-text: #f1f5f9;
+}
+
+/* BASE*/
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+/*CONTAINER */
+.container {
+  width: 100%;
+  max-width: 420px;
+}
+
+/*CALCULATOR*/
+.calculator {
+  background: var(--bg-calculator);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/*HEADER */
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calculator-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.theme-toggle {
+  background: var(--btn-number-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+.theme-toggle .icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/*DISPLAY*/
+.display {
+  background: var(--btn-number-bg);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: 1px solid var(--border-color);
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.display-expression {
+  font-size: 16px;
+  color: var(--text-secondary);
+  min-height: 28px;
+  word-break: break-all;
+  text-align: right;
+  width: 100%;
+  transition: color 0.3s ease;
+}
+
+.display-result {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-display);
+  line-height: 1.2;
+  word-break: break-all;
+  text-align: right;
+  width: 100%;
+  transition: color 0.3s ease;
+}
+
+/*BUTTONS GRID*/
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/*BUTTON BASE */
+.btn {
+  padding: 18px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+  font-family: "Inter", sans-serif;
+  color: var(--btn-text);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border: 1px solid var(--border-color);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/*NUMBER BUTTONS*/
+.btn-number {
+  background: var(--btn-number-bg);
+}
+
+.btn-number:hover {
+  background: var(--btn-number-hover);
+}
+
+.btn-number:active {
+  background: var(--btn-number-active);
+}
+
+/* =====ZERO BUTTON (2 columns)*/
+.btn-zero {
+  grid-column: span 2;
+}
+
+/*OPERATOR BUTTONS */
+.btn-operator {
+  background: var(--btn-operator-bg);
+  color: var(--text-secondary);
+}
+
+.btn-operator:hover {
+  background: var(--btn-operator-hover);
+}
+
+.btn-operator:active {
+  background: var(--btn-operator-active);
+}
+
+/*EQUALS BUTTON*/
+.btn-equals {
+  background: var(--btn-equals-bg);
+  color: var(--btn-text-white);
+  border-color: var(--btn-equals-bg);
+}
+
+.btn-equals:hover {
+  background: var(--btn-equals-hover);
+  border-color: var(--btn-equals-hover);
+}
+
+.btn-equals:active {
+  background: var(--btn-equals-active);
+  border-color: var(--btn-equals-active);
+}
+
+/*CLEAR BUTTON*/
+.btn-clear {
+  background: var(--btn-clear-bg);
+  color: #dc2626;
+  border-color: var(--btn-clear-bg);
+}
+
+.btn-clear:hover {
+  background: var(--btn-clear-hover);
+}
+
+.btn-clear:active {
+  background: var(--btn-clear-active);
+}
+
+/*RESPONSIVE*/
+@media (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+  .calculator {
+    padding: 16px;
+    border-radius: 20px;
+  }
+  .btn {
+    font-size: 18px;
+    padding: 14px 0;
+    min-height: 50px;
+  }
+  .display-result {
+    font-size: 32px;
+  }
+  .display-expression {
+    font-size: 14px;
+  }
+  .calculator-header h1 {
+    font-size: 17px;
+  }
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 380px) {
+  .calculator {
+    padding: 12px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 12px 0;
+    min-height: 44px;
+    border-radius: 10px;
+  }
+  .display-result {
+    font-size: 28px;
+  }
+  .display {
+    padding: 12px 16px;
+    min-height: 80px;
+  }
+  .buttons {
+    gap: 8px;
+  }
+}
