@@ -12,6 +12,7 @@ My internship tasks at **Oasis Infobyte** — Web Development & Designing track.
 | **Personal Portfolio**    | [View Live](https://oibsip-v2kn.vercel.app/)        |
 | **Temperature Converter** | [View Live](https://oibsip-lihg.vercel.app/)        |
 | **Calculator**            | [View Live](https://oibsip-q3x8.vercel.app/)        |
+| **Tribute Page**          | [View Live](https://oibsip-tvfa.vercel.app/)        |
 
 ---
 
