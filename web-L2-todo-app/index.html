@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📋 To-Do App</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="app-header">
+        <h1>My Tasks</h1>
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fas fa-moon"></i>
+        </button>
+      </header>
+
+      <!-- Add Task Section -->
+      <section class="add-task">
+        <div class="input-group">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="What do you need to do?"
+            maxlength="100"
+            autofocus
+          />
+          <button id="addBtn" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Add Task
+          </button>
+        </div>
+      </section>
+
+      <!-- Tasks Container -->
+      <div class="tasks-container">
+        <!-- Pending Tasks -->
+        <section class="task-section">
+          <div class="section-header">
+            <h2>Pending</h2>
+            <span id="pendingCount" class="task-count">0 pending</span>
+          </div>
+          <ul id="pendingList" class="task-list">
+            <!-- Tasks will be rendered here -->
+          </ul>
+          <div id="pendingEmpty" class="empty-state">
+            <i class="fas fa-smile-wink"></i>
+            <p>No pending tasks</p>
+            <span>Add a task to get started!</span>
+          </div>
+        </section>
+
+        <!-- Completed Tasks -->
+        <section class="task-section">
+          <div class="section-header">
+            <h2>Completed</h2>
+            <span id="completedCount" class="task-count">0 completed</span>
+          </div>
+          <ul id="completedList" class="task-list">
+            <!-- Tasks will be rendered here -->
+          </ul>
+          <div id="completedEmpty" class="empty-state">
+            <i class="fas fa-check-circle"></i>
+            <p>No completed tasks yet</p>
+            <span>Start completing your tasks!</span>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer class="app-footer">
+        <p>Tasks are saved automatically</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
