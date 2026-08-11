@@ -331,8 +331,6 @@ document.addEventListener('dblclick', e => {
   editTask(id, listType)
 })
 
-
-
 const savedTheme = localStorage.getItem('todoTheme') || 'light'
 document.documentElement.setAttribute('data-theme', savedTheme)
 updateThemeIcon(savedTheme)

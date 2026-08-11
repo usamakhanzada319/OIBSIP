@@ -705,7 +705,7 @@ body {
   }
 }
 
-/*  EXTRA SMALL (under 360px)*/
+/* (under 360px)*/
 @media (max-width: 359px) {
   body {
     padding: 8px 4px;
