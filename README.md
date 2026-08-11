@@ -6,15 +6,15 @@ A complete collection of **7 web development projects** built during my internsh
 
 ## Project Showcase
 
-| #   | Project                   | Live Demo                                            | Repository                                                         |
-| --- | ------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
-| 1   | **Landing Page**          | [ View Live](https://web-l1-landing-page.vercel.app) | [ Source](https://github.com/usamakhanzada319/Web-L1-Landing-Page) |
-| 2   | **Personal Portfolio**    | [ View Live](https://oibsip-v2kn.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP)              |
-| 3   | **Temperature Converter** | [ View Live](https://oibsip-lihg.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP)              |
-| 4   | **Calculator**            | [ View Live](https://oibsip-q3x8.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP)              |
-| 5   | **Tribute Page**          | [ View Live](https://oibsip-tvfa.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP)              |
-| 6   | **Todo App**              | [ View Live](https://oibsip-i3k7.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP)              |
-| 7   | **Authentication System** | [ View Live](https://oibsip-5qo1.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP)              |
+| #   | Project                   | Live Demo                                            | Repository                                            |
+| --- | ------------------------- | ---------------------------------------------------- | ----------------------------------------------------- |
+| 1   | **Landing Page**          | [ View Live](https://web-l1-landing-page.vercel.app) | [ Source](https://github.com/usamakhanzada319/OIBSIP) |
+| 2   | **Personal Portfolio**    | [ View Live](https://oibsip-v2kn.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP) |
+| 3   | **Temperature Converter** | [ View Live](https://oibsip-lihg.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP) |
+| 4   | **Calculator**            | [ View Live](https://oibsip-q3x8.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP) |
+| 5   | **Tribute Page**          | [ View Live](https://oibsip-tvfa.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP) |
+| 6   | **Todo App**              | [ View Live](https://oibsip-i3k7.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP) |
+| 7   | **Authentication System** | [ View Live](https://oibsip-5qo1.vercel.app)         | [ Source](https://github.com/usamakhanzada319/OIBSIP) |
 
 ---
 
