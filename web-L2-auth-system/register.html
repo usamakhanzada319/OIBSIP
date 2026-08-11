@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Auth System</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  Font Awesome 6 (Latest) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Theme Toggle -->
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+
+      <div class="auth-card">
+        <!-- Header -->
+        <div class="auth-header">
+          <div class="logo">🔐</div>
+          <h1>Create Account</h1>
+          <p>Join us and get started</p>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="registerForm" class="auth-form" autocomplete="off">
+          <!-- Username -->
+          <div class="form-group">
+            <label for="regUsername">Username *</label>
+            <div class="input-wrapper">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                id="regUsername"
+                placeholder="Choose a username"
+                required
+              />
+            </div>
+            <span class="error-text" id="regUsernameError"></span>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="regEmail">Email Address *</label>
+            <div class="input-wrapper">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                id="regEmail"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <span class="error-text" id="regEmailError"></span>
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <label for="regPassword">Password *</label>
+            <div class="input-wrapper">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                id="regPassword"
+                placeholder="Create a password"
+                required
+              />
+              <button
+                type="button"
+                class="toggle-password"
+                onclick="togglePassword('loginPassword')"
+                aria-label="Toggle password visibility"
+              >
+                <i class="fas fa-eye" id="toggleIcon"></i>
+              </button>
+            </div>
+            <span class="error-text" id="regPasswordError"></span>
+            <div class="password-hint" id="passwordHint">
+              <span class="hint-item" id="hintLength">✗ Min 8 characters</span>
+              <span class="hint-item" id="hintNumber">✗ At least 1 number</span>
+            </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="form-group">
+            <label for="regConfirmPassword">Confirm Password *</label>
+            <div class="input-wrapper">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                id="regConfirmPassword"
+                placeholder="Confirm your password"
+                required
+              />
+              <button
+                type="button"
+                class="toggle-password"
+                onclick="togglePassword('loginPassword')"
+                aria-label="Toggle password visibility"
+              >
+                <i class="fas fa-eye" id="toggleIcon"></i>
+              </button>
+            </div>
+            <span class="error-text" id="regConfirmError"></span>
+          </div>
+
+          <!-- Terms -->
+          <div class="form-options">
+            <label class="checkbox-label">
+              <input type="checkbox" id="termsCheck" required />
+              <span
+                >I agree to the <a href="#">Terms of Service</a> and
+                <a href="#">Privacy Policy</a></span
+              >
+            </label>
+          </div>
+
+          <!-- Error Message -->
+          <div id="registerError" class="auth-error hidden">
+            <i class="fas fa-exclamation-circle"></i>
+            <span id="registerErrorMessage">Registration failed</span>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary" id="registerBtn">
+            <span id="registerBtnText">Create Account</span>
+            <span id="registerBtnLoader" class="loader hidden"></span>
+          </button>
+        </form>
+
+        <!-- Login Link -->
+        <div class="auth-footer">
+          <p>Already have an account? <a href="index.html">Sign in</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+      <i class="fas fa-check-circle" id="toastIcon"></i>
+      <span id="toastMessage">Success!</span>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
